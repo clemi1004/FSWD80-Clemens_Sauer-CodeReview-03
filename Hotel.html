@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hotel</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+   <p id="text"></p>
+
+<script type="text/javascript">
+var userInput = Number(prompt("Number of nights you want to stay?"));
+function HotelConstructor(name, rooms, reserved) {
+    this.name = name;
+    this.rooms = rooms;
+    this.reserved = Math.floor(Math.random() * 50) + 1;
+    this.checkAvailable = function() {
+      return this.rooms - this.reserved;
+    };
+  }
+        var a=[];
+        var hotel1=new HotelConstructor("Hilton",42);
+        a.push(hotel1);
+        var hotel2=new HotelConstructor("Marriott",38);
+        a.push(hotel2);
+        var hotel3=new HotelConstructor("Holiday Inn",24);
+        a.push(hotel3);
+for (i =0; i<a.length ; i++) {
+    if (a[i].checkAvailable() >= a[i].reserved) {
+        document.getElementById("text").innerHTML+="Its available! Reserve in " + a[i].name + "<br>";
+                }
+    else {
+        document.getElementById("text").innerHTML +="Sorry, no free room for " + userInput + " nights" + " in " + 
+        a[i].name + "<br>";
+                }   
+    }
+</script>
+</body>
+</html>
