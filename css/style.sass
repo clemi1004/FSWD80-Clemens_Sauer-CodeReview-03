@@ -31,12 +31,15 @@ nav
 	padding: 5px
 
 // Background Image
+// https://fvsch.com/object-fit-decoration/
 .container_2
 	background-image: url("img/traffic-332857_1920.jpg")
+	height: 960px
 	width: 100%
-	height: 100%
-	object-fit: contain
+	background-repeat: no-repeat /* Do not repeat the image */
+	background-size: cover 
 	margin: 0px
+
 
 // heading container
 #heading
@@ -57,11 +60,13 @@ nav
 	background-color: rgba(255, 255, 255, 0.6)
 	padding: 20px
 	margin: 40px
+	border: 5px solid orange
 
 // Container for header_calculator
 #header_calculator_container
 	margin-left: 25%
 	margin-right: 25%
+	border: 5px solid blue
 
 // Container for header_calculator paragraph
 #header_calculator_container > p
@@ -100,7 +105,7 @@ nav
 //calculate button
 .calculate_button
 	border: 5px solid red
-	margin-left: 37%
+	margin-left: 30%
 
 //calculate button size etc.
 .calculate_button > button
@@ -125,6 +130,7 @@ nav
 	background-color: #cecece
 	text-align: center
 	padding: 20px
+	border: 5px solid red
 
 
 //Formating paragraph 1
