@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 var name
 var age
 var country
@@ -28,3 +29,13 @@ function myFunction() {
 		document.getElementById("Insurance_text").textContent = name + ', your insurance costs ' + result + ' €.';
 	}
 
+=======
+var name;
+
+function myFunction(){
+		name = document.getElementById("your_name").value;
+        };
+
+
+console.log(name);
+>>>>>>> 8ab9793f00e35de22518734bfab67417f634ead2
