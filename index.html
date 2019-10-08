@@ -3,6 +3,7 @@
     <meta name="Clemens_Sauer" content="Codefactory">
     <meta charset='utf-8'>
     <link rel='stylesheet' type='text/css' href='css/style.css'>
+    <link rel='stylesheet' type='text/css' href='css/style_ipad.css'>
     <title>Inscurace_Index</title>
 </head>
 <body>
@@ -39,27 +40,35 @@
                     <div class="container_incl_all_buttons">  
                         <!-- Your name button container -->
                         <div class="input_fields">
-                            <p>Your name:</p>
-                            <input class="field" type="text" id="your_name" value="NAME">
+                            <form name="your_name_form">
+                                <p>Your name:</p>
+                                <input class="field" type="text" name="your_name" value="NAME">
+                            </form>
                         </div>
                         <!-- age container -->
                         <div class="input_fields">
-                            <p>Age:</p>
-                            <input class="field" type="text" id="your_age" value="AGE">
+                            <form name="input_fields_form">
+                                <p>Age:</p>
+                                <input class="field" type="text" id="your_age" value="AGE">
+                            </form>
                         </div>
                         <!-- Country container -->
                         <div class="input_fields">
-                            <p>Country:</p>
-                            <select class="field" id="list">
-                                <option value="Austria">Austria</option>
-                                <option value="Hungary">Hungary</option>
-                                <option value="Greece">Greece</option>
-                            </select>
+                            <form name="input_fields_select_form">
+                                <p>Country:</p>
+                                <select class="field" id="list">
+                                    <option value="Austria">Austria</option>
+                                    <option value="Hungary">Hungary</option>
+                                    <option value="Greece">Greece</option>
+                                </select>
+                            </form>
                         </div>
                         <!-- horsepower container -->
                         <div class="input_fields">
-                            <p>Horsepower of your car:</p>
-                            <input class="field" type="text" id="horsepower" value="AGE">
+                            <form name="input_fields_horsepower_form">
+                                <p>Horsepower of your car:</p>
+                                <input class="field" type="text" id="horsepower" value="AGE">
+                            </form>
                         </div>
                         <!-- Calculate button container -->
                         <div class="calculate_button">
@@ -68,7 +77,7 @@
                     </div> 
                 <!-- Container for footer_button in container -->
                 <div id="footer_button_container">
-                    <p>Printed calculation goes here</p>
+                    <p id="Insurance_text"></p>
                 </div>
             </div>
     </div>

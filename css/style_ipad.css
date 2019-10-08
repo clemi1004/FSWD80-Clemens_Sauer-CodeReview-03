@@ -1,4 +1,4 @@
-@media only screen and (min-width: 769px) {
+@media only screen and (max-width: 768px) {
   body {
     font-family: Arial;
     background-color: white; }
@@ -18,7 +18,8 @@
     background-color: #8e1616;
     font-size: 25px;
     padding: 10px;
-    margin: 0px; }
+    margin: 0px;
+    text-align: center; }
 
   .nav_bar_text > a {
     color: #ffffff;
@@ -35,7 +36,8 @@
   #heading {
     color: white;
     padding: 15px;
-    margin: 0px; }
+    margin: 0px;
+    text-align: center; }
 
   #heading > p {
     color: white;
@@ -80,7 +82,7 @@
     font-size: 18px; }
 
   .calculate_button {
-    margin-left: 33%; }
+    margin-left: 15%; }
 
   .calculate_button > button {
     font-size: 25px;
@@ -164,13 +166,9 @@
     text-decoration: none;
     padding: 5px; }
 
-  .container_3 {
-    text-align: right;
-    margin-right: 2.5%; }
-
   .copyright {
     text-align: center;
     color: white;
     padding: 5px; } }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style_ipad.css.map */
